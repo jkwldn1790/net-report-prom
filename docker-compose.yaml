@@ -1,0 +1,21 @@
+version: "3.9"
+services:
+  prometheus:
+    build: ./prometheus
+    ports:
+      - 9090:9090
+  net-report:
+    build: .
+    ports:
+      - 3200:3200
+  grafana:
+    build:
+      context: ./grafana
+    container_name: grafana
+    ports:
+      - 3000:3000
+    # volumes:
+    #   - grafana-data:/var/lib/grafana
+# volumes:
+#   grafana-data:
+#     external: true
