@@ -1,2 +1,2 @@
 # Net Report with Prometheus
-Tool for 
+Monitors local network performance and reports performance to a grafana dashboard using prometheus.
