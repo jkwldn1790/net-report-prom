@@ -2,6 +2,8 @@ import time
 import prometheus_client as prom
 import speedtest
 
+# Comment
+
 DOWNLOAD_SPEED_GUAGE = prom.Gauge('download_speed', 'internet download speed from speedtest in Mbps')
 UPLOAD_SPEED_GUAGE = prom.Gauge('upload_speed', 'internet upload speed from speedtest in Mbps')
 
